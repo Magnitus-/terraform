@@ -2,7 +2,7 @@
 
 This fork is a tentative work in progress to fork **Terraform** into another project called **OpenTF**.
 
-**Hashicorp** is not affiliated in any way with this project and does not endorse it. The any mention of **Terraform** or **Hashicorp** or any other trademark belonging to **Harshicorp** are legacy artifacts that will be gradually phased out of the project.
+**Hashicorp** is not affiliated in any way with this project and does not endorse it. Any mention of **Terraform** or **Hashicorp** or any other trademark belonging to **Harshicorp** are accidental legacy artifacts that will be gradually phased out of the project.
 
 The original **Terraform** project maintained by **Hashicorp** can be found here: https://github.com/hashicorp/terraform
 
