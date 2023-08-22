@@ -15,8 +15,6 @@ We are grateful to **Hashicorp** for having created and stewarded the open-sourc
 - Documentation: https://opentf.org/
 - Tutorials: https://opentf.org/
 
-<img alt="OpenTF" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
-
 OpenTF is a tool for building, changing, and versioning infrastructure safely and efficiently. OpenTF can manage existing and popular service providers as well as custom in-house solutions.
 
 The key features of OpenTF are:
