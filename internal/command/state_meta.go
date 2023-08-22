@@ -8,12 +8,12 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 
-	backendLocal "github.com/hashicorp/terraform/internal/backend/local"
+	backendLocal "github.com/opentffoundation/opentf/internal/backend/local"
 )
 
 // StateMeta is the meta struct that should be embedded in state subcommands.

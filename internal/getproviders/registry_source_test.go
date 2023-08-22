@@ -14,7 +14,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	svchost "github.com/hashicorp/terraform-svchost"
 
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 func TestSourceAvailableVersions(t *testing.T) {

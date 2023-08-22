@@ -6,10 +6,10 @@ package terraform
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/providers"
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/providers"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 )
 
 // simpleMockPluginLibrary returns a plugin library pre-configured with

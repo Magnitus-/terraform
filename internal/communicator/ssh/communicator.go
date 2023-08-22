@@ -22,13 +22,13 @@ import (
 	"time"
 
 	"github.com/apparentlymart/go-shquot/shquot"
-	"github.com/hashicorp/terraform/internal/communicator/remote"
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/communicator/remote"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 	"github.com/zclconf/go-cty/cty"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/opentffoundation/opentf/internal/logging"
 )
 
 const (

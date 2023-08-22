@@ -8,7 +8,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 	"github.com/zclconf/go-cty/cty"
 )
 

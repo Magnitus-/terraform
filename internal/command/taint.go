@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/clistate"
-	"github.com/hashicorp/terraform/internal/command/views"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/clistate"
+	"github.com/opentffoundation/opentf/internal/command/views"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // TaintCommand is a cli.Command implementation that manually taints

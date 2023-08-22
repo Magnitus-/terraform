@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/checks"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/checks"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 func TestMarshalCheckStates(t *testing.T) {

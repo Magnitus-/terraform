@@ -11,12 +11,12 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/jsonchecks"
-	"github.com/hashicorp/terraform/internal/lang/marks"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/command/jsonchecks"
+	"github.com/opentffoundation/opentf/internal/lang/marks"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/terraform"
 )
 
 const (

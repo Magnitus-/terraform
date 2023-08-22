@@ -13,10 +13,10 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/providers"
-	"github.com/hashicorp/terraform/internal/repl"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/providers"
+	"github.com/opentffoundation/opentf/internal/repl"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // Provider is an implementation of providers.Interface which we're

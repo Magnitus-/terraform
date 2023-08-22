@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 const invalidFormat = "Invalid state file format"

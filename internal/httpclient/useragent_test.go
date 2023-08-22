@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/version"
 )
 
 func TestUserAgentString_env(t *testing.T) {

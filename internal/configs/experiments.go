@@ -7,8 +7,8 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/experiments"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/experiments"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // When developing UI for experimental features, you can temporarily disable

@@ -8,18 +8,18 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 
 	tfe "github.com/hashicorp/go-tfe"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/clistate"
-	"github.com/hashicorp/terraform/internal/command/views"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
-	"github.com/hashicorp/terraform/internal/terminal"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/clistate"
+	"github.com/opentffoundation/opentf/internal/command/views"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/initwd"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/terminal"
 	"github.com/zclconf/go-cty/cty"
 )
 

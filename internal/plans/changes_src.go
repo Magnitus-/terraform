@@ -6,8 +6,8 @@ package plans
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/states"
 	"github.com/zclconf/go-cty/cty"
 )
 

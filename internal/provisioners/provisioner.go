@@ -4,8 +4,8 @@
 package provisioners
 
 import (
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

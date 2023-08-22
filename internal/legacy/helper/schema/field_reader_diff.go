@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/opentffoundation/opentf/internal/legacy/terraform"
 	"github.com/mitchellh/mapstructure"
 )
 

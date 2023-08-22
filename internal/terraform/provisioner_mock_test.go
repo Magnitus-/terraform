@@ -4,7 +4,7 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 )
 
 // simpleMockProvisioner returns a MockProvisioner that is pre-configured

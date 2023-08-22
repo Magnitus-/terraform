@@ -6,8 +6,8 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/internal/dag"
-	"github.com/hashicorp/terraform/internal/logging"
+	"github.com/opentffoundation/opentf/internal/dag"
+	"github.com/opentffoundation/opentf/internal/logging"
 )
 
 // GraphTransformer is the interface that transformers implement. This

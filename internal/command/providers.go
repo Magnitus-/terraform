@@ -9,9 +9,9 @@ import (
 
 	"github.com/xlab/treeprint"
 
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // ProvidersCommand is a Command implementation that prints out information

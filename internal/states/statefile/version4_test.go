@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

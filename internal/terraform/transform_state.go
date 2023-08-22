@@ -6,7 +6,7 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 // StateTransformer is a GraphTransformer that adds the elements of

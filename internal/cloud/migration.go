@@ -4,8 +4,8 @@
 package cloud
 
 import (
-	"github.com/hashicorp/terraform/internal/configs"
-	legacy "github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/opentffoundation/opentf/internal/configs"
+	legacy "github.com/opentffoundation/opentf/internal/legacy/terraform"
 )
 
 // Most of the logic for migrating into and out of "cloud mode" actually lives

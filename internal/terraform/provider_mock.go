@@ -11,9 +11,9 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"github.com/zclconf/go-cty/cty/msgpack"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/configs/hcl2shim"
-	"github.com/hashicorp/terraform/internal/providers"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/configs/hcl2shim"
+	"github.com/opentffoundation/opentf/internal/providers"
 )
 
 var _ providers.Interface = (*MockProvider)(nil)

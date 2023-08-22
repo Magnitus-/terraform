@@ -6,11 +6,11 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/dag"
-	"github.com/hashicorp/terraform/internal/lang"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/dag"
+	"github.com/opentffoundation/opentf/internal/lang"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 type ConcreteModuleNodeFunc func(n *nodeExpandModule) dag.Vertex

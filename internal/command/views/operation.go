@@ -8,17 +8,17 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/format"
-	"github.com/hashicorp/terraform/internal/command/jsonformat"
-	"github.com/hashicorp/terraform/internal/command/jsonplan"
-	"github.com/hashicorp/terraform/internal/command/jsonprovider"
-	"github.com/hashicorp/terraform/internal/command/views/json"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/format"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat"
+	"github.com/opentffoundation/opentf/internal/command/jsonplan"
+	"github.com/opentffoundation/opentf/internal/command/jsonprovider"
+	"github.com/opentffoundation/opentf/internal/command/views/json"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 type Operation interface {

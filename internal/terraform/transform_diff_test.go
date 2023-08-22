@@ -9,8 +9,8 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/plans"
 )
 
 func TestDiffTransformer_nilDiff(t *testing.T) {

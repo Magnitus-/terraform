@@ -11,9 +11,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/version"
 	"github.com/mitchellh/go-homedir"
 	k8sSchema "k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"

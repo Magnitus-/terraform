@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/terminal"
+	"github.com/opentffoundation/opentf/internal/terraform"
 	"github.com/zclconf/go-cty/cty"
 )
 

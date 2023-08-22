@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/dag"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/dag"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // DiffTransformer is a GraphTransformer that adds graph nodes representing

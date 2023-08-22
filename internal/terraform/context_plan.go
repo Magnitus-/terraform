@@ -13,14 +13,14 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/instances"
-	"github.com/hashicorp/terraform/internal/lang/globalref"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/refactoring"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/instances"
+	"github.com/opentffoundation/opentf/internal/lang/globalref"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/refactoring"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // PlanOpts are the various options that affect the details of how Terraform

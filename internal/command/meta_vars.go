@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	hcljson "github.com/hashicorp/hcl/v2/json"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // VarEnvPrefix is the prefix for environment variables that represent values

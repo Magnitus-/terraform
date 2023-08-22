@@ -10,9 +10,9 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/depsfile"
+	"github.com/opentffoundation/opentf/internal/getproviders"
 )
 
 // A Config is a node in the tree of modules within a configuration.

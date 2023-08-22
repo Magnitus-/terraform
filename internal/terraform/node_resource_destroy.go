@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/terraform/internal/instances"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/instances"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 // NodeDestroyResourceInstance represents a resource instance that is to be

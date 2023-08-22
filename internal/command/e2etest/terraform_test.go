@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/e2e"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/e2e"
 )
 
 func TestTerraformProviderData(t *testing.T) {

@@ -7,11 +7,11 @@ import (
 	"encoding/json"
 	"reflect"
 
-	"github.com/hashicorp/terraform/internal/command/jsonformat/structured/attribute_path"
-	"github.com/hashicorp/terraform/internal/command/jsonplan"
-	"github.com/hashicorp/terraform/internal/command/jsonstate"
-	viewsjson "github.com/hashicorp/terraform/internal/command/views/json"
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat/structured/attribute_path"
+	"github.com/opentffoundation/opentf/internal/command/jsonplan"
+	"github.com/opentffoundation/opentf/internal/command/jsonstate"
+	viewsjson "github.com/opentffoundation/opentf/internal/command/views/json"
+	"github.com/opentffoundation/opentf/internal/plans"
 )
 
 // Change contains the unmarshalled generic interface{} types that are output by

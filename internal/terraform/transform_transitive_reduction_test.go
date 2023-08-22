@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 )
 

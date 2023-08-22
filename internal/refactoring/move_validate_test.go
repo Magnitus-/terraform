@@ -12,13 +12,13 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty/gocty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/configs/configload"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/instances"
-	"github.com/hashicorp/terraform/internal/registry"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs/configload"
+	"github.com/opentffoundation/opentf/internal/initwd"
+	"github.com/opentffoundation/opentf/internal/instances"
+	"github.com/opentffoundation/opentf/internal/registry"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 func TestValidateMoves(t *testing.T) {

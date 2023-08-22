@@ -6,7 +6,7 @@ package terraform
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 func TestProvisionerUIOutput_impl(t *testing.T) {

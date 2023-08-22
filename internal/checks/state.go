@@ -8,8 +8,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
 )
 
 // State is a container for state tracking of all of the the checks declared in

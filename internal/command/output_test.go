@@ -11,8 +11,8 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 func TestOutput(t *testing.T) {

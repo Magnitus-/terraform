@@ -6,9 +6,9 @@ package grpcwrap
 import (
 	"context"
 
-	"github.com/hashicorp/terraform/internal/plugin6/convert"
-	"github.com/hashicorp/terraform/internal/providers"
-	"github.com/hashicorp/terraform/internal/tfplugin6"
+	"github.com/opentffoundation/opentf/internal/plugin6/convert"
+	"github.com/opentffoundation/opentf/internal/providers"
+	"github.com/opentffoundation/opentf/internal/tfplugin6"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"github.com/zclconf/go-cty/cty/msgpack"

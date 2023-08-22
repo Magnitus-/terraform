@@ -9,7 +9,7 @@ import (
 	"github.com/go-test/deep"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

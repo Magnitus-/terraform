@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/views"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/views"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // ValidateCommand is a Command implementation that validates the terraform files

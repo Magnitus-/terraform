@@ -10,8 +10,8 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/lang/marks"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/lang/marks"
 )
 
 // AssertObjectCompatible checks whether the given "actual" value is a valid

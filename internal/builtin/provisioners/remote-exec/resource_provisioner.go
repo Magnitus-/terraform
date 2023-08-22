@@ -14,11 +14,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/communicator"
-	"github.com/hashicorp/terraform/internal/communicator/remote"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/provisioners"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/communicator"
+	"github.com/opentffoundation/opentf/internal/communicator/remote"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/mitchellh/go-linereader"
 	"github.com/zclconf/go-cty/cty"
 )

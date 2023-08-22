@@ -15,10 +15,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/s3"
 	awsbase "github.com/hashicorp/aws-sdk-go-base"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/configs/hcl2shim"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/configs/hcl2shim"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/remote"
 )
 
 var (

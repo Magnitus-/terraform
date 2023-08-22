@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/states/remote"
 )
 
 const (

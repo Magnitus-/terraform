@@ -4,8 +4,8 @@
 package providers
 
 import (
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
 )
 
 // Schemas is an overall container for all of the schemas for all configurable

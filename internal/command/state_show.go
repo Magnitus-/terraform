@@ -8,14 +8,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/jsonformat"
-	"github.com/hashicorp/terraform/internal/command/jsonprovider"
-	"github.com/hashicorp/terraform/internal/command/jsonstate"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat"
+	"github.com/opentffoundation/opentf/internal/command/jsonprovider"
+	"github.com/opentffoundation/opentf/internal/command/jsonstate"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
 	"github.com/mitchellh/cli"
 )
 

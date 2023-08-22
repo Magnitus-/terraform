@@ -4,8 +4,8 @@
 package providercache
 
 import (
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/getproviders"
 )
 
 type testInstallerEventLogItem struct {

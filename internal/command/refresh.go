@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/views"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/views"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // RefreshCommand is a cli.Command implementation that refreshes the state

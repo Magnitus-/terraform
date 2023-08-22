@@ -12,13 +12,13 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/checks"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/instances"
-	"github.com/hashicorp/terraform/internal/lang"
-	"github.com/hashicorp/terraform/internal/lang/marks"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/checks"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/instances"
+	"github.com/opentffoundation/opentf/internal/lang"
+	"github.com/opentffoundation/opentf/internal/lang/marks"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // evalCheckRules ensures that all of the given check rules pass against

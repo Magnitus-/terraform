@@ -9,11 +9,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/providercache"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/depsfile"
+	"github.com/opentffoundation/opentf/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/providercache"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 type providersLockChangeType string

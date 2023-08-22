@@ -4,10 +4,10 @@
 package main
 
 import (
-	"github.com/hashicorp/terraform/internal/builtin/providers/terraform"
-	"github.com/hashicorp/terraform/internal/grpcwrap"
-	"github.com/hashicorp/terraform/internal/plugin"
-	"github.com/hashicorp/terraform/internal/tfplugin5"
+	"github.com/opentffoundation/opentf/internal/builtin/providers/terraform"
+	"github.com/opentffoundation/opentf/internal/grpcwrap"
+	"github.com/opentffoundation/opentf/internal/plugin"
+	"github.com/opentffoundation/opentf/internal/tfplugin5"
 )
 
 func main() {

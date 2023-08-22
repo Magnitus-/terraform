@@ -13,10 +13,10 @@ import (
 
 	tfe "github.com/hashicorp/go-tfe"
 
-	"github.com/hashicorp/terraform/internal/command/jsonstate"
-	"github.com/hashicorp/terraform/internal/states/remote"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/command/jsonstate"
+	"github.com/opentffoundation/opentf/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 )
 
 type remoteClient struct {

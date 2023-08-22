@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 func TestOrphanResourceCountTransformer(t *testing.T) {

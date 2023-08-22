@@ -6,12 +6,12 @@ package terraform
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs"
 )
 
 // ModuleVariableTransformer is a GraphTransformer that adds all the variables

@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 	"github.com/mitchellh/cli"
 	"github.com/zclconf/go-cty/cty"
 )

@@ -23,10 +23,10 @@ import (
 	svchost "github.com/hashicorp/terraform-svchost"
 	svcauth "github.com/hashicorp/terraform-svchost/auth"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/httpclient"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/httpclient"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/version"
 )
 
 const (

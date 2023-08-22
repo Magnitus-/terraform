@@ -14,10 +14,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/s3"
 	awsbase "github.com/hashicorp/aws-sdk-go-base"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // New creates a new backend for S3 remote state.

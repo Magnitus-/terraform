@@ -6,8 +6,8 @@ package providercache
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/getproviders"
 )
 
 func TestCachedProviderHash(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-tfe"
-	"github.com/hashicorp/terraform/internal/backend"
+	"github.com/opentffoundation/opentf/internal/backend"
 	"github.com/mitchellh/cli"
 )
 

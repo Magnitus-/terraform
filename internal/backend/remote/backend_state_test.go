@@ -8,11 +8,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/cloud"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/remote"
-	"github.com/hashicorp/terraform/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/cloud"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
 )
 
 func TestRemoteClient_impl(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/hashicorp/terraform/internal/repl"
+	"github.com/opentffoundation/opentf/internal/repl"
 
 	"github.com/chzyer/readline"
 	"github.com/mitchellh/cli"

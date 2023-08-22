@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/dag"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/dag"
 )
 
 func TestReferenceTransformer_simple(t *testing.T) {

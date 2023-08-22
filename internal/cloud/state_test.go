@@ -15,11 +15,11 @@ import (
 	"time"
 
 	tfe "github.com/hashicorp/go-tfe"
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/backend/local"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/backend/local"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 	"github.com/zclconf/go-cty/cty"
 )
 

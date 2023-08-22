@@ -8,7 +8,7 @@ import (
 
 	"github.com/go-test/deep"
 
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 func TestProviderAddrs(t *testing.T) {

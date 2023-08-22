@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/lang/globalref"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/lang/globalref"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/terminal"
+	"github.com/opentffoundation/opentf/internal/terraform"
 	"github.com/zclconf/go-cty/cty"
 )
 

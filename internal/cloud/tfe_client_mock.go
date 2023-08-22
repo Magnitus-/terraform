@@ -22,8 +22,8 @@ import (
 	tfe "github.com/hashicorp/go-tfe"
 	"github.com/mitchellh/copystructure"
 
-	"github.com/hashicorp/terraform/internal/command/jsonformat"
-	tfversion "github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat"
+	tfversion "github.com/opentffoundation/opentf/version"
 )
 
 type MockClient struct {

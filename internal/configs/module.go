@@ -8,10 +8,10 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/experiments"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/experiments"
 
-	tfversion "github.com/hashicorp/terraform/version"
+	tfversion "github.com/opentffoundation/opentf/version"
 )
 
 // Module is a container for a set of configuration constructs that are

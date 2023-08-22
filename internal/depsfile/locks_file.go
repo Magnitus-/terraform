@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/replacefile"
-	"github.com/hashicorp/terraform/internal/tfdiags"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/replacefile"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // LoadLocksFromFile reads locks from the given file, expecting it to be a

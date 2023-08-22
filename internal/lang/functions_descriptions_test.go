@@ -6,7 +6,7 @@ package lang
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/lang/funcs"
+	"github.com/opentffoundation/opentf/internal/lang/funcs"
 )
 
 func TestFunctionDescriptions(t *testing.T) {

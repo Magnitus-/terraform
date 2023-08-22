@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/providers"
-	proto "github.com/hashicorp/terraform/internal/tfplugin6"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/providers"
+	proto "github.com/opentffoundation/opentf/internal/tfplugin6"
 	"github.com/zclconf/go-cty/cty"
 )
 

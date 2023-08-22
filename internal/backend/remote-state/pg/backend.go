@@ -10,8 +10,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
 	"github.com/lib/pq"
 )
 

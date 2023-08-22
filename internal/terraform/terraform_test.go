@@ -16,17 +16,17 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/configs/configload"
-	"github.com/hashicorp/terraform/internal/initwd"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/providers"
-	"github.com/hashicorp/terraform/internal/provisioners"
-	"github.com/hashicorp/terraform/internal/registry"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs/configload"
+	"github.com/opentffoundation/opentf/internal/initwd"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/providers"
+	"github.com/opentffoundation/opentf/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/registry"
+	"github.com/opentffoundation/opentf/internal/states"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/opentffoundation/opentf/internal/logging"
 )
 
 // This is the directory where our test fixtures are.

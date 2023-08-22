@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/hashicorp/terraform/internal/configs/hcl2shim"
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/opentffoundation/opentf/internal/configs/hcl2shim"
+	"github.com/opentffoundation/opentf/internal/legacy/terraform"
 )
 
 // testSetFunc is a very simple function we use to test a foo/bar complex set.

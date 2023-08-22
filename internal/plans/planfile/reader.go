@@ -9,12 +9,12 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/configs/configload"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs/configload"
+	"github.com/opentffoundation/opentf/internal/depsfile"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 const tfstateFilename = "tfstate"

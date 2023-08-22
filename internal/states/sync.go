@@ -7,8 +7,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/checks"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/checks"
 	"github.com/zclconf/go-cty/cty"
 )
 

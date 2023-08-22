@@ -16,11 +16,11 @@ import (
 
 	"github.com/hashicorp/go-retryablehttp"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/states/remote"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 )
 
 func New() backend.Backend {

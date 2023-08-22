@@ -4,8 +4,8 @@
 package cloud
 
 import (
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/jsonformat"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat"
 )
 
 // CLIInit implements backend.CLI

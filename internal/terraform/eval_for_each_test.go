@@ -11,8 +11,8 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hcltest"
-	"github.com/hashicorp/terraform/internal/lang/marks"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/lang/marks"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

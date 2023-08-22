@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
 )
 
 // New creates a new backend for Azure remote state.

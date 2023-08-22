@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 )
 
 // testStateBackups returns the list of backups in order of creation

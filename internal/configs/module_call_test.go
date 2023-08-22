@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-test/deep"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 func TestLoadModuleCall(t *testing.T) {

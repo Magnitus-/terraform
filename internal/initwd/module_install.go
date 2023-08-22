@@ -17,15 +17,15 @@ import (
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/configs/configload"
-	"github.com/hashicorp/terraform/internal/getmodules"
-	"github.com/hashicorp/terraform/internal/modsdir"
-	"github.com/hashicorp/terraform/internal/registry"
-	"github.com/hashicorp/terraform/internal/registry/regsrc"
-	"github.com/hashicorp/terraform/internal/registry/response"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs/configload"
+	"github.com/opentffoundation/opentf/internal/getmodules"
+	"github.com/opentffoundation/opentf/internal/modsdir"
+	"github.com/opentffoundation/opentf/internal/registry"
+	"github.com/opentffoundation/opentf/internal/registry/regsrc"
+	"github.com/opentffoundation/opentf/internal/registry/response"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 type ModuleInstaller struct {

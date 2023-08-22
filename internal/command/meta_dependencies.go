@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/depsfile"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // dependenclyLockFilename is the filename of the dependency lock file.

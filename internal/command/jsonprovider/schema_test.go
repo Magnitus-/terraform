@@ -8,7 +8,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
 )
 
 func TestMarshalSchemas(t *testing.T) {

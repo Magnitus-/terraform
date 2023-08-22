@@ -9,8 +9,8 @@ import (
 
 	"github.com/zclconf/go-cty/cty/function"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/experiments"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/experiments"
 )
 
 // Scope is the main type in this package, allowing dynamic evaluation of

@@ -13,8 +13,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/states"
 )
 
 func TestStateMv(t *testing.T) {

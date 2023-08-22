@@ -14,16 +14,16 @@ import (
 
 	plugin "github.com/hashicorp/go-plugin"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	terraformProvider "github.com/hashicorp/terraform/internal/builtin/providers/terraform"
-	"github.com/hashicorp/terraform/internal/getproviders"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/moduletest"
-	tfplugin "github.com/hashicorp/terraform/internal/plugin"
-	tfplugin6 "github.com/hashicorp/terraform/internal/plugin6"
-	"github.com/hashicorp/terraform/internal/providercache"
-	"github.com/hashicorp/terraform/internal/providers"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	terraformProvider "github.com/opentffoundation/opentf/internal/builtin/providers/terraform"
+	"github.com/opentffoundation/opentf/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/internal/moduletest"
+	tfplugin "github.com/opentffoundation/opentf/internal/plugin"
+	tfplugin6 "github.com/opentffoundation/opentf/internal/plugin6"
+	"github.com/opentffoundation/opentf/internal/providercache"
+	"github.com/opentffoundation/opentf/internal/providers"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // The TF_DISABLE_PLUGIN_TLS environment variable is intended only for use by

@@ -6,7 +6,7 @@ package terraform
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs"
 	"github.com/zclconf/go-cty/cty"
 )
 

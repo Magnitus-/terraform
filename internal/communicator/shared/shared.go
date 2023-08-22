@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 )
 

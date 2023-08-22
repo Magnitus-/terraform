@@ -13,16 +13,16 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/command/jsonchecks"
-	"github.com/hashicorp/terraform/internal/command/jsonconfig"
-	"github.com/hashicorp/terraform/internal/command/jsonstate"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/command/jsonchecks"
+	"github.com/opentffoundation/opentf/internal/command/jsonconfig"
+	"github.com/opentffoundation/opentf/internal/command/jsonstate"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // FormatVersion represents the version of the json format and will be

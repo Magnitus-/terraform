@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/plans"
 )
 
 type Hook interface {

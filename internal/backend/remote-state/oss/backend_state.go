@@ -14,10 +14,10 @@ import (
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/remote"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 )
 
 const (

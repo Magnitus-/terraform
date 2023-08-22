@@ -7,8 +7,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/terraform"
 )
 
 // NewFullFake returns a full state manager that really only supports transient

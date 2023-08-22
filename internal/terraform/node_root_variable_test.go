@@ -10,9 +10,9 @@ import (
 	"github.com/hashicorp/hcl/v2/hcltest"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/lang"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/lang"
 )
 
 func TestNodeRootVariableExecute(t *testing.T) {

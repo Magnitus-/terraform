@@ -10,8 +10,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/terraform"
 )
 
 func TestMarshalProvider(t *testing.T) {

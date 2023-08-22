@@ -11,12 +11,12 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform/internal/addrs"
-	viewsjson "github.com/hashicorp/terraform/internal/command/views/json"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/terminal"
-	"github.com/hashicorp/terraform/internal/tfdiags"
-	tfversion "github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	viewsjson "github.com/opentffoundation/opentf/internal/command/views/json"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/terminal"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
+	tfversion "github.com/opentffoundation/opentf/version"
 )
 
 // Calling NewJSONView should also always output a version message, which is a

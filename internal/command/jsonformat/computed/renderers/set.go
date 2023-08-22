@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/command/jsonformat/computed"
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat/computed"
+	"github.com/opentffoundation/opentf/internal/plans"
 )
 
 var _ computed.DiffRenderer = (*setRenderer)(nil)

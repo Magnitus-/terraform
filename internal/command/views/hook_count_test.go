@@ -9,12 +9,12 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/terraform"
 
-	legacy "github.com/hashicorp/terraform/internal/legacy/terraform"
+	legacy "github.com/opentffoundation/opentf/internal/legacy/terraform"
 )
 
 func TestCountHook_impl(t *testing.T) {

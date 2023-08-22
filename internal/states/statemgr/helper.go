@@ -7,10 +7,10 @@ package statemgr
 // operations done against full state managers.
 
 import (
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // NewStateFile creates a new statefile.File object, with a newly-minted

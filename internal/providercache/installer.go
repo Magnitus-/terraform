@@ -12,10 +12,10 @@ import (
 
 	"github.com/apparentlymart/go-versions/versions"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	copydir "github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/internal/depsfile"
-	"github.com/hashicorp/terraform/internal/getproviders"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	copydir "github.com/opentffoundation/opentf/internal/copy"
+	"github.com/opentffoundation/opentf/internal/depsfile"
+	"github.com/opentffoundation/opentf/internal/getproviders"
 )
 
 // Installer is the main type in this package, representing a provider installer

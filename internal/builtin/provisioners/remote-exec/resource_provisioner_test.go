@@ -14,9 +14,9 @@ import (
 
 	"strings"
 
-	"github.com/hashicorp/terraform/internal/communicator"
-	"github.com/hashicorp/terraform/internal/communicator/remote"
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/communicator"
+	"github.com/opentffoundation/opentf/internal/communicator/remote"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 	"github.com/mitchellh/cli"
 	"github.com/zclconf/go-cty/cty"
 )

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform/internal/providers"
+	"github.com/opentffoundation/opentf/internal/providers"
 	"github.com/zclconf/go-cty-debug/ctydebug"
 	"github.com/zclconf/go-cty/cty"
 )

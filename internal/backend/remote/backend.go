@@ -19,19 +19,19 @@ import (
 	version "github.com/hashicorp/go-version"
 	svchost "github.com/hashicorp/terraform-svchost"
 	"github.com/hashicorp/terraform-svchost/disco"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/states/remote"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
-	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/hashicorp/terraform/internal/tfdiags"
-	tfversion "github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
+	tfversion "github.com/opentffoundation/opentf/version"
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/colorstring"
 	"github.com/zclconf/go-cty/cty"
 
-	backendLocal "github.com/hashicorp/terraform/internal/backend/local"
+	backendLocal "github.com/opentffoundation/opentf/internal/backend/local"
 )
 
 const (

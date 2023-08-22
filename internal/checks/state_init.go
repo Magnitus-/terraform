@@ -4,8 +4,8 @@
 package checks
 
 import (
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
 )
 
 func initialStatuses(cfg *configs.Config) addrs.Map[addrs.ConfigCheckable, *configCheckableState] {

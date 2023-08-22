@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	tfplugin5 "github.com/hashicorp/terraform/internal/tfplugin5"
+	tfplugin5 "github.com/opentffoundation/opentf/internal/tfplugin5"
 	grpc "google.golang.org/grpc"
 	metadata "google.golang.org/grpc/metadata"
 )

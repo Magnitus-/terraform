@@ -9,11 +9,11 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/hashicorp/terraform/internal/communicator/shared"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/plugin/convert"
-	"github.com/hashicorp/terraform/internal/provisioners"
-	"github.com/hashicorp/terraform/internal/tfplugin5"
+	"github.com/opentffoundation/opentf/internal/communicator/shared"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/plugin/convert"
+	"github.com/opentffoundation/opentf/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/tfplugin5"
 )
 
 // New wraps a provisioners.Interface to implement a grpc ProviderServer.

@@ -4,8 +4,8 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/provisioners"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/provisioners"
 )
 
 // ResourceProvisioner is an interface that must be implemented by any

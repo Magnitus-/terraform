@@ -32,9 +32,9 @@ import (
 	"github.com/jmespath/go-jmespath"
 	"github.com/mitchellh/go-homedir"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/legacy/helper/schema"
-	"github.com/hashicorp/terraform/version"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/legacy/helper/schema"
+	"github.com/opentffoundation/opentf/version"
 )
 
 // Deprecated in favor of flattening assume_role_* options

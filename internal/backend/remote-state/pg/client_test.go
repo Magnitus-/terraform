@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/states/remote"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/states/remote"
 )
 
 func TestRemoteClient_impl(t *testing.T) {

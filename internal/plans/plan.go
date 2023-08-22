@@ -7,10 +7,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs/configschema"
-	"github.com/hashicorp/terraform/internal/lang/globalref"
-	"github.com/hashicorp/terraform/internal/states"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs/configschema"
+	"github.com/opentffoundation/opentf/internal/lang/globalref"
+	"github.com/opentffoundation/opentf/internal/states"
 	"github.com/zclconf/go-cty/cty"
 )
 

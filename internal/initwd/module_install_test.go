@@ -19,14 +19,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	version "github.com/hashicorp/go-version"
 	svchost "github.com/hashicorp/terraform-svchost"
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/configs/configload"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/internal/registry"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/configs/configload"
+	"github.com/opentffoundation/opentf/internal/copy"
+	"github.com/opentffoundation/opentf/internal/registry"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 
-	_ "github.com/hashicorp/terraform/internal/logging"
+	_ "github.com/opentffoundation/opentf/internal/logging"
 )
 
 func TestMain(m *testing.M) {

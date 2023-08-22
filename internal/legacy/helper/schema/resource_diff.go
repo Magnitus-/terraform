@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hashicorp/terraform/internal/legacy/terraform"
+	"github.com/opentffoundation/opentf/internal/legacy/terraform"
 )
 
 // newValueWriter is a minor re-implementation of MapFieldWriter to include

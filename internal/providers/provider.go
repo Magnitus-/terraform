@@ -6,8 +6,8 @@ package providers
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // Interface represents the set of methods required for a complete resource

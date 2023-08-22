@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/arguments"
-	"github.com/hashicorp/terraform/internal/command/jsonprovider"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/arguments"
+	"github.com/opentffoundation/opentf/internal/command/jsonprovider"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // ProvidersCommand is a Command implementation that prints out information

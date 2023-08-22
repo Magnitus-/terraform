@@ -4,8 +4,8 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
 // GraphWalker is an interface that can be implemented that when used

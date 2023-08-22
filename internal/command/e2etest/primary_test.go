@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/hashicorp/terraform/internal/e2e"
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/e2e"
+	"github.com/opentffoundation/opentf/internal/plans"
 	"github.com/zclconf/go-cty/cty"
 )
 

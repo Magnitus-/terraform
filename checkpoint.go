@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 
 	"github.com/hashicorp/go-checkpoint"
-	"github.com/hashicorp/terraform/internal/command"
-	"github.com/hashicorp/terraform/internal/command/cliconfig"
+	"github.com/opentffoundation/opentf/internal/command"
+	"github.com/opentffoundation/opentf/internal/command/cliconfig"
 )
 
 func init() {

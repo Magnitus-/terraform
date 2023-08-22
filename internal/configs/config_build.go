@@ -9,7 +9,7 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 // BuildConfig constructs a Config from a root module by loading all of its

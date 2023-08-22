@@ -20,11 +20,11 @@ import (
 	"github.com/hashicorp/go-retryablehttp"
 	tfe "github.com/hashicorp/go-tfe"
 	"github.com/hashicorp/jsonapi"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/command/jsonformat"
-	"github.com/hashicorp/terraform/internal/logging"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/terraform"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/command/jsonformat"
+	"github.com/opentffoundation/opentf/internal/logging"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/terraform"
 )
 
 var (

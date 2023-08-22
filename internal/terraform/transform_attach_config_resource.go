@@ -6,8 +6,8 @@ package terraform
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/dag"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/dag"
 )
 
 // GraphNodeAttachResourceConfig is an interface that must be implemented by nodes

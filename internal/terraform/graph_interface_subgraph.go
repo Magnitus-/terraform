@@ -4,7 +4,7 @@
 package terraform
 
 import (
-	"github.com/hashicorp/terraform/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/addrs"
 )
 
 // GraphNodeModuleInstance says that a node is part of a graph with a

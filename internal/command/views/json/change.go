@@ -6,7 +6,7 @@ package json
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/plans"
+	"github.com/opentffoundation/opentf/internal/plans"
 )
 
 func NewResourceInstanceChange(change *plans.ResourceInstanceChangeSrc) *ResourceInstanceChange {

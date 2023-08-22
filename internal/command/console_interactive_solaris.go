@@ -9,7 +9,7 @@ package command
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/repl"
+	"github.com/opentffoundation/opentf/internal/repl"
 	"github.com/mitchellh/cli"
 )
 

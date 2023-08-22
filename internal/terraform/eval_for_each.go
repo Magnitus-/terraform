@@ -7,9 +7,9 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/terraform/internal/lang"
-	"github.com/hashicorp/terraform/internal/lang/marks"
-	"github.com/hashicorp/terraform/internal/tfdiags"
+	"github.com/opentffoundation/opentf/internal/lang"
+	"github.com/opentffoundation/opentf/internal/lang/marks"
+	"github.com/opentffoundation/opentf/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

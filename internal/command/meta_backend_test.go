@@ -12,20 +12,20 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform/internal/addrs"
-	"github.com/hashicorp/terraform/internal/backend"
-	"github.com/hashicorp/terraform/internal/configs"
-	"github.com/hashicorp/terraform/internal/copy"
-	"github.com/hashicorp/terraform/internal/plans"
-	"github.com/hashicorp/terraform/internal/states"
-	"github.com/hashicorp/terraform/internal/states/statefile"
-	"github.com/hashicorp/terraform/internal/states/statemgr"
+	"github.com/opentffoundation/opentf/internal/addrs"
+	"github.com/opentffoundation/opentf/internal/backend"
+	"github.com/opentffoundation/opentf/internal/configs"
+	"github.com/opentffoundation/opentf/internal/copy"
+	"github.com/opentffoundation/opentf/internal/plans"
+	"github.com/opentffoundation/opentf/internal/states"
+	"github.com/opentffoundation/opentf/internal/states/statefile"
+	"github.com/opentffoundation/opentf/internal/states/statemgr"
 	"github.com/mitchellh/cli"
 	"github.com/zclconf/go-cty/cty"
 
-	backendInit "github.com/hashicorp/terraform/internal/backend/init"
-	backendLocal "github.com/hashicorp/terraform/internal/backend/local"
-	backendInmem "github.com/hashicorp/terraform/internal/backend/remote-state/inmem"
+	backendInit "github.com/opentffoundation/opentf/internal/backend/init"
+	backendLocal "github.com/opentffoundation/opentf/internal/backend/local"
+	backendInmem "github.com/opentffoundation/opentf/internal/backend/remote-state/inmem"
 )
 
 // Test empty directory with no config/state creates a local state.

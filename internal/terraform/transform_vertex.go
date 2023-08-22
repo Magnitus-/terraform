@@ -6,7 +6,7 @@ package terraform
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform/internal/dag"
+	"github.com/opentffoundation/opentf/internal/dag"
 )
 
 // VertexTransformer is a GraphTransformer that transforms vertices
