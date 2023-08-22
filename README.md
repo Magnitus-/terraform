@@ -1,26 +1,25 @@
 # Disclaimer
 
-This fork is a tentative work in progress to fork Terraform into another project called OpenTF.
+This fork is a tentative work in progress to fork **Terraform** into another project called **OpenTF**.
 
-Hashicorp is no longer affiliated in any way with this project and does not endorse it. The any mention of **Terraform** or **Hashicorp** or any other trademark belonging to **Harshicorp** are legacy artifacts that will be gradually phased out of the project.
+**Hashicorp** is no longer affiliated in any way with this project and does not endorse it. The any mention of **Terraform** or **Hashicorp** or any other trademark belonging to **Harshicorp** are legacy artifacts that will be gradually phased out of the project.
 
-The original Terraform project maintained by Hashicorp can be found here: https://github.com/hashicorp/terraform
+The original **Terraform** project maintained by **Hashicorp** can be found here: https://github.com/hashicorp/terraform
 
-We are grateful to **Hashicorp** for having created and stewarded the open-source version of this project as well as its community for so long.
+We are grateful to **Hashicorp** for having created and stewarded the open-source version of **Terraform** (which this project is based) on as well as its community for so long.
 
 # OpenTF
 
-- Website: https://www.terraform.io
-- Forums: [HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)
-- Documentation: [https://www.terraform.io/docs/](https://www.terraform.io/docs/)
-- Tutorials: [HashiCorp's Learn Platform](https://learn.hashicorp.com/terraform)
-- Certification Exam: [HashiCorp Certified: Terraform Associate](https://www.hashicorp.com/certification/#hashicorp-certified-terraform-associate)
+- Website: https://opentf.org/
+- Forums: TODO
+- Documentation: TODO
+- Tutorials: TODO
 
 <img alt="OpenTF" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
 
-Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
+OpenTF is a tool for building, changing, and versioning infrastructure safely and efficiently. OpenTF can manage existing and popular service providers as well as custom in-house solutions.
 
-The key features of Terraform are:
+The key features of OpenTF are:
 
 - **Infrastructure as Code**: Infrastructure is described using a high-level configuration syntax. This allows a blueprint of your datacenter to be versioned and treated as you would any other code. Additionally, infrastructure can be shared and re-used.
 
