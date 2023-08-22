@@ -1,4 +1,14 @@
-# Terraform
+# Disclaimer
+
+This fork is a tentative work in progress to fork Terraform into another project called OpenTF.
+
+Hashicorp is no longer affiliated in any way with this project and does not endorse it. The any mention of **Terraform** or **Hashicorp** or any other trademark belonging to **Harshicorp** are legacy artifacts that will be gradually phased out of the project.
+
+The original Terraform project maintained by Hashicorp can be found here: https://github.com/hashicorp/terraform
+
+We are grateful to **Hashicorp** for having created and stewarded the open-source version of this project as well as its community for so long.
+
+# OpenTF
 
 - Website: https://www.terraform.io
 - Forums: [HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)
@@ -6,7 +16,7 @@
 - Tutorials: [HashiCorp's Learn Platform](https://learn.hashicorp.com/terraform)
 - Certification Exam: [HashiCorp Certified: Terraform Associate](https://www.hashicorp.com/certification/#hashicorp-certified-terraform-associate)
 
-<img alt="Terraform" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
+<img alt="OpenTF" src="https://www.datocms-assets.com/2885/1629941242-logo-terraform-main.svg" width="600px">
 
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
 
