@@ -47,7 +47,7 @@ func (c *GetCommand) Run(args []string) int {
 
 func (c *GetCommand) Help() string {
 	helpText := `
-Usage: terraform [global options] get [options]
+Usage: opentf [global options] get [options]
 
   Downloads and installs modules needed for the configuration in the 
   current working directory.
@@ -58,7 +58,7 @@ Usage: terraform [global options] get [options]
   unless the -update flag is specified.
 
   Module installation also happens automatically by default as part of
-  the "terraform init" command, so you should rarely need to run this
+  the "opentf init" command, so you should rarely need to run this
   command separately.
 
 Options:
@@ -73,7 +73,7 @@ Options:
 }
 
 func (c *GetCommand) Synopsis() string {
-	return "Install or upgrade remote Terraform modules"
+	return "Install or upgrade remote OpenTF modules"
 }
 
 func getModules(m *Meta, path string, upgrade bool) (abort bool, diags tfdiags.Diagnostics) {

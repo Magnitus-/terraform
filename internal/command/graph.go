@@ -135,7 +135,7 @@ func (c *GraphCommand) Run(args []string) int {
 	case "apply":
 		plan := lr.Plan
 
-		// Historically "terraform graph" would allow the nonsensical request to
+		// Historically "opentf graph" would allow the nonsensical request to
 		// render an apply graph without a plan, so we continue to support that
 		// here, though perhaps one day this should be an error.
 		if lr.Plan == nil {
@@ -196,7 +196,7 @@ func (c *GraphCommand) Run(args []string) int {
 
 func (c *GraphCommand) Help() string {
 	helpText := `
-Usage: terraform [global options] graph [options]
+Usage: opentf [global options] graph [options]
 
   Produces a representation of the dependency graph between different
   objects in the current configuration and state.
@@ -214,10 +214,10 @@ Options:
                    This helps when diagnosing cycle errors.
 
   -type=plan       Type of graph to output. Can be: plan, plan-refresh-only,
-                   plan-destroy, or apply. By default Terraform chooses
+                   plan-destroy, or apply. By default OpenTF chooses
 				   "plan", or "apply" if you also set the -plan=... option.
 
-  -module-depth=n  (deprecated) In prior versions of Terraform, specified the
+  -module-depth=n  (deprecated) In prior versions of OpenTF, specified the
 				   depth of modules to show in the output.
 `
 	return strings.TrimSpace(helpText)

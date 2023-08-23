@@ -324,15 +324,15 @@ func (c *ApplyCommand) Synopsis() string {
 
 func (c *ApplyCommand) helpApply() string {
 	helpText := `
-Usage: terraform [global options] apply [options] [PLAN]
+Usage: opentf [global options] apply [options] [PLAN]
 
-  Creates or updates infrastructure according to Terraform configuration
+  Creates or updates infrastructure according to OpenTF configuration
   files in the current directory.
 
-  By default, Terraform will generate a new plan and present it for your
+  By default, OpenTF will generate a new plan and present it for your
   approval before taking any action. You can optionally provide a plan
-  file created by a previous call to "terraform plan", in which case
-  Terraform will take the actions described in that plan without any
+  file created by a previous call to "opentf plan", in which case
+  OpenTF will take the actions described in that plan without any
   confirmation prompt.
 
 Options:
@@ -343,12 +343,12 @@ Options:
                          modifying. Defaults to the "-state-out" path with
                          ".backup" extension. Set to "-" to disable backup.
 
-  -compact-warnings      If Terraform produces any warnings that are not
+  -compact-warnings      If OpenTF produces any warnings that are not
                          accompanied by errors, show them in a more compact
                          form that includes only the summary messages.
 
-  -destroy               Destroy Terraform-managed infrastructure.
-                         The command "terraform destroy" is a convenience alias
+  -destroy               Destroy OpenTF-managed infrastructure.
+                         The command "opentf destroy" is a convenience alias
                          for this option.
 
   -lock=false            Don't hold a state lock during the operation. This is
@@ -372,25 +372,25 @@ Options:
                          state.
 
   If you don't provide a saved plan file then this command will also accept
-  all of the plan-customization options accepted by the terraform plan command.
+  all of the plan-customization options accepted by the opentf plan command.
   For more information on those options, run:
-      terraform plan -help
+      opentf plan -help
 `
 	return strings.TrimSpace(helpText)
 }
 
 func (c *ApplyCommand) helpDestroy() string {
 	helpText := `
-Usage: terraform [global options] destroy [options]
+Usage: opentf [global options] destroy [options]
 
-  Destroy Terraform-managed infrastructure.
+  Destroy Opentf-managed infrastructure.
 
   This command is a convenience alias for:
-      terraform apply -destroy
+      opentf apply -destroy
 
   This command also accepts many of the plan-customization options accepted by
-  the terraform plan command. For more information on those options, run:
-      terraform plan -help
+  the opentf plan command. For more information on those options, run:
+      opentf plan -help
 `
 	return strings.TrimSpace(helpText)
 }

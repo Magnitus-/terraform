@@ -141,7 +141,7 @@ func (c *FmtCommand) fmt(paths []string, stdin io.Reader, stdout io.Writer) tfdi
 				diags = diags.Append(fileDiags)
 				f.Close()
 			default:
-				diags = diags.Append(fmt.Errorf("Only .tf and .tfvars files can be processed with terraform fmt"))
+				diags = diags.Append(fmt.Errorf("Only .tf and .tfvars files can be processed with opentf fmt"))
 				continue
 			}
 		}
@@ -153,7 +153,7 @@ func (c *FmtCommand) fmt(paths []string, stdin io.Reader, stdout io.Writer) tfdi
 func (c *FmtCommand) processFile(path string, r io.Reader, w io.Writer, isStdout bool) tfdiags.Diagnostics {
 	var diags tfdiags.Diagnostics
 
-	log.Printf("[TRACE] terraform fmt: Formatting %s", path)
+	log.Printf("[TRACE] opentf fmt: Formatting %s", path)
 
 	src, err := ioutil.ReadAll(r)
 	if err != nil {
@@ -211,7 +211,7 @@ func (c *FmtCommand) processFile(path string, r io.Reader, w io.Writer, isStdout
 func (c *FmtCommand) processDir(path string, stdout io.Writer) tfdiags.Diagnostics {
 	var diags tfdiags.Diagnostics
 
-	log.Printf("[TRACE] terraform fmt: looking for files in %s", path)
+	log.Printf("[TRACE] opentf fmt: looking for files in %s", path)
 
 	entries, err := ioutil.ReadDir(path)
 	if err != nil {
@@ -239,7 +239,7 @@ func (c *FmtCommand) processDir(path string, stdout io.Writer) tfdiags.Diagnosti
 			}
 
 			// We do not recurse into child directories by default because we
-			// want to mimic the file-reading behavior of "terraform plan", etc,
+			// want to mimic the file-reading behavior of "opentf plan", etc,
 			// operating on one module at a time.
 			continue
 		}
@@ -526,9 +526,9 @@ func (c *FmtCommand) trimNewlines(tokens hclwrite.Tokens) hclwrite.Tokens {
 
 func (c *FmtCommand) Help() string {
 	helpText := `
-Usage: terraform [global options] fmt [options] [target...]
+Usage: opentf [global options] fmt [options] [target...]
 
-  Rewrites all Terraform configuration files to a canonical format. Both
+  Rewrites all OpenTF configuration files to a canonical format. Both
   configuration files (.tf) and variables files (.tfvars) are updated.
   JSON files (.tf.json or .tfvars.json) are not modified.
 
@@ -538,7 +538,7 @@ Usage: terraform [global options] fmt [options] [target...]
   file. If you provide a single dash ("-"), then fmt will read from standard
   input (STDIN).
 
-  The content must be in the Terraform language native syntax; JSON is not
+  The content must be in the OpenTF language native syntax; JSON is not
   supported.
 
 Options:
