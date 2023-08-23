@@ -50,7 +50,7 @@ func (c *ProvidersCommand) Run(args []string) int {
 		diags = diags.Append(tfdiags.Sourceless(
 			tfdiags.Error,
 			"Error validating configuration directory",
-			fmt.Sprintf("Terraform encountered an unexpected error while verifying that the given configuration directory is valid: %s.", err),
+			fmt.Sprintf("OpenTF encountered an unexpected error while verifying that the given configuration directory is valid: %s.", err),
 		))
 		c.showDiagnostics(diags)
 		return 1
@@ -63,7 +63,7 @@ func (c *ProvidersCommand) Run(args []string) int {
 		diags = diags.Append(tfdiags.Sourceless(
 			tfdiags.Error,
 			"No configuration files",
-			fmt.Sprintf("The directory %s contains no Terraform configuration files.", absPath),
+			fmt.Sprintf("The directory %s contains no OpenTF configuration files.", absPath),
 		))
 		c.showDiagnostics(diags)
 		return 1
@@ -153,7 +153,7 @@ func (c *ProvidersCommand) populateTreeNode(tree treeprint.Tree, node *configs.M
 }
 
 const providersCommandHelp = `
-Usage: terraform [global options] providers [DIR]
+Usage: opentf [global options] providers [DIR]
 
   Prints out a tree of modules in the referenced configuration annotated with
   their provider requirements.

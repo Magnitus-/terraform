@@ -43,7 +43,7 @@ func (c *MetadataFunctionsCommand) Run(args []string) int {
 
 	if !jsonOutput {
 		c.Ui.Error(
-			"The `terraform metadata functions` command requires the `-json` flag.\n")
+			"The `opentf metadata functions` command requires the `-json` flag.\n")
 		cmdFlags.Usage()
 		return 1
 	}
@@ -69,7 +69,7 @@ func (c *MetadataFunctionsCommand) Run(args []string) int {
 }
 
 const metadataFunctionsCommandHelp = `
-Usage: terraform [global options] metadata functions -json
+Usage: opentf [global options] metadata functions -json
 
   Prints out a json representation of the available function signatures.
 `

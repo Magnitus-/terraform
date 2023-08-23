@@ -72,7 +72,7 @@ func (c *LogoutCommand) Run(args []string) int {
 		diags = diags.Append(tfdiags.Sourceless(
 			tfdiags.Error,
 			fmt.Sprintf("Credentials for %s are manually configured", dispHostname),
-			"The \"terraform logout\" command cannot log out because credentials for this host are manually configured in a CLI configuration file.\n\nTo log out, revoke the existing credentials and remove that block from the CLI configuration.",
+			"The \"opentf logout\" command cannot log out because credentials for this host are manually configured in a CLI configuration file.\n\nTo log out, revoke the existing credentials and remove that block from the CLI configuration.",
 		))
 	}
 
@@ -108,7 +108,7 @@ func (c *LogoutCommand) Run(args []string) int {
 	c.Ui.Output(
 		fmt.Sprintf(
 			c.Colorize().Color(strings.TrimSpace(`
-[green][bold]Success![reset] [bold]Terraform has removed the stored API token for %s.[reset]
+[green][bold]Success![reset] [bold]OpenTF has removed the stored API token for %s.[reset]
 `)),
 			dispHostname,
 		) + "\n",
@@ -131,7 +131,7 @@ func (c *LogoutCommand) Help() string {
 	}
 
 	helpText := `
-Usage: terraform [global options] logout [hostname]
+Usage: opentf [global options] logout [hostname]
 
   Removes locally-stored credentials for specified hostname.
 
