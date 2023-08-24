@@ -57,7 +57,7 @@ func (c *ValidateCommand) Run(rawArgs []string) int {
 
 	// Validating with dev overrides in effect means that the result might
 	// not be valid for a stable release, so we'll warn about that in case
-	// the user is trying to use "terraform validate" as a sort of pre-flight
+	// the user is trying to use "opentf validate" as a sort of pre-flight
 	// check before submitting a change.
 	diags = diags.Append(c.providerDevOverrideRuntimeWarnings())
 
@@ -97,7 +97,7 @@ func (c *ValidateCommand) Synopsis() string {
 
 func (c *ValidateCommand) Help() string {
 	helpText := `
-Usage: terraform [global options] validate [options]
+Usage: opentf [global options] validate [options]
 
   Validate the configuration files in a directory, referring only to the
   configuration and not accessing any remote services such as remote state,
@@ -115,10 +115,10 @@ Usage: terraform [global options] validate [options]
   Validation requires an initialized working directory with any referenced
   plugins and modules installed. To initialize a working directory for
   validation without accessing any configured remote backend, use:
-      terraform init -backend=false
+      opentf init -backend=false
 
   To verify configuration in the context of a particular run (a particular
-  target workspace, input variable values, etc), use the 'terraform plan'
+  target workspace, input variable values, etc), use the 'opentf plan'
   command instead, which includes an implied validation check.
 
 Options:

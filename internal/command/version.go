@@ -47,9 +47,9 @@ type VersionCheckInfo struct {
 
 func (c *VersionCommand) Help() string {
 	helpText := `
-Usage: terraform [global options] version [options]
+Usage: opentf [global options] version [options]
 
-  Displays the version of Terraform and all installed plugins
+  Displays the version of OpenTF and all installed plugins
 
 Options:
 
@@ -78,18 +78,18 @@ func (c *VersionCommand) Run(args []string) int {
 		return 1
 	}
 
-	fmt.Fprintf(&versionString, "Terraform v%s", c.Version)
+	fmt.Fprintf(&versionString, "OpenTF v%s", c.Version)
 	if c.VersionPrerelease != "" {
 		fmt.Fprintf(&versionString, "-%s", c.VersionPrerelease)
 	}
 
 	// We'll also attempt to print out the selected plugin versions. We do
 	// this based on the dependency lock file, and so the result might be
-	// empty or incomplete if the user hasn't successfully run "terraform init"
+	// empty or incomplete if the user hasn't successfully run "opentf init"
 	// since the most recent change to dependencies.
 	//
 	// Generally-speaking this is a best-effort thing that will give us a good
-	// result in the usual case where the user successfully ran "terraform init"
+	// result in the usual case where the user successfully ran "opentf init"
 	// and then hit a problem running _another_ command.
 	var providerVersions []string
 	var providerLocks map[addrs.Provider]*depsfile.ProviderLock
@@ -160,7 +160,7 @@ func (c *VersionCommand) Run(args []string) int {
 		}
 		if outdated {
 			c.Ui.Output(fmt.Sprintf(
-				"\nYour version of Terraform is out of date! The latest version\n"+
+				"\nYour version of OpenTF is out of date! The latest version\n"+
 					"is %s. You can update by downloading from https://www.terraform.io/downloads.html",
 				latest))
 		}
@@ -171,5 +171,5 @@ func (c *VersionCommand) Run(args []string) int {
 }
 
 func (c *VersionCommand) Synopsis() string {
-	return "Show the current Terraform version"
+	return "Show the current OpenTF version"
 }

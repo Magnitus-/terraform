@@ -31,7 +31,7 @@ import (
 	"github.com/opentffoundation/opentf/internal/tfdiags"
 )
 
-// TestCommand is the implementation of "terraform test".
+// TestCommand is the implementation of "opentf test".
 type TestCommand struct {
 	Meta
 }
@@ -50,7 +50,7 @@ func (c *TestCommand) Run(rawArgs []string) int {
 
 	diags = diags.Append(tfdiags.Sourceless(
 		tfdiags.Warning,
-		`The "terraform test" command is experimental`,
+		`The "opentf test" command is experimental`,
 		"We'd like to invite adventurous module authors to write integration tests for their modules using this command, but all of the behaviors of this command are currently experimental and may change based on feedback.\n\nFor more information on the testing experiment, including ongoing research goals and avenues for feedback, see:\n    https://www.terraform.io/docs/language/modules/testing-experiment.html",
 	))
 
@@ -90,7 +90,7 @@ func (c *TestCommand) run(ctx context.Context, args arguments.Test) (results map
 		diags = diags.Append(tfdiags.Sourceless(
 			tfdiags.Error,
 			"Error while searching for test configurations",
-			fmt.Sprintf("While attempting to scan the 'tests' subdirectory for potential test configurations, Terraform encountered an error: %s.", err),
+			fmt.Sprintf("While attempting to scan the 'tests' subdirectory for potential test configurations, OpenTF encountered an error: %s.", err),
 		))
 		return nil, diags
 	}
@@ -117,9 +117,9 @@ func (c *TestCommand) runSuite(ctx context.Context, suiteName string) (*modulete
 		Components: map[string]*moduletest.Component{},
 	}
 
-	// In order to make this initial round of "terraform test" pretty self
+	// In order to make this initial round of "opentf test" pretty self
 	// contained while it's experimental, it's largely just mimicking what
-	// would happen when running the main Terraform workflow commands, which
+	// would happen when running the main OpenTF workflow commands, which
 	// comes at the expense of a few irritants that we'll hopefully resolve
 	// in future iterations as the design solidifies:
 	// - We need to install remote modules separately for each of the
@@ -152,7 +152,7 @@ func (c *TestCommand) runSuite(ctx context.Context, suiteName string) (*modulete
 			Assertions: map[string]*moduletest.Assertion{
 				"(init)": {
 					Outcome:     moduletest.Error,
-					Description: "terraform init",
+					Description: "opentf init",
 					Message:     "failed to install test suite dependencies",
 					Diagnostics: diags,
 				},
@@ -233,7 +233,7 @@ func (c *TestCommand) runSuite(ctx context.Context, suiteName string) (*modulete
 func (c *TestCommand) prepareSuiteDir(ctx context.Context, suiteName string) (testCommandSuiteDirs, tfdiags.Diagnostics) {
 	var diags tfdiags.Diagnostics
 	configDir := filepath.Join("tests", suiteName)
-	log.Printf("[TRACE] terraform test: Prepare directory for suite %q in %s", suiteName, configDir)
+	log.Printf("[TRACE] opentf test: Prepare directory for suite %q in %s", suiteName, configDir)
 
 	suiteDirs := testCommandSuiteDirs{
 		SuiteName: suiteName,
@@ -242,7 +242,7 @@ func (c *TestCommand) prepareSuiteDir(ctx context.Context, suiteName string) (te
 
 	// Before we can run a test suite we need to make sure that we have all of
 	// its dependencies available, so the following is essentially an
-	// abbreviated form of what happens during "terraform init", with some
+	// abbreviated form of what happens during "opentf init", with some
 	// extra trickery in places.
 
 	// First, module installation. This will include linking in the module
@@ -355,7 +355,7 @@ func (c *TestCommand) prepareSuiteDir(ctx context.Context, suiteName string) (te
 }
 
 func (c *TestCommand) runTestSuite(ctx context.Context, suiteDirs testCommandSuiteDirs) (map[string]*moduletest.Component, *states.State) {
-	log.Printf("[TRACE] terraform test: Run test suite %q", suiteDirs.SuiteName)
+	log.Printf("[TRACE] opentf test: Run test suite %q", suiteDirs.SuiteName)
 
 	ret := make(map[string]*moduletest.Component)
 
@@ -400,7 +400,7 @@ func (c *TestCommand) runTestSuite(ctx context.Context, suiteDirs testCommandSui
 		// providers.
 		return synthError(
 			"init",
-			"terraform init",
+			"opentf init",
 			"failed to resolve the required providers",
 			diags,
 		)
@@ -415,7 +415,7 @@ func (c *TestCommand) runTestSuite(ctx context.Context, suiteDirs testCommandSui
 		// providers.
 		return synthError(
 			"plan",
-			"terraform plan",
+			"opentf plan",
 			"failed to create a plan",
 			diags,
 		)
@@ -433,7 +433,7 @@ func (c *TestCommand) runTestSuite(ctx context.Context, suiteDirs testCommandSui
 		// continue to the destroy below even if there are apply errors.
 		synthError(
 			"apply",
-			"terraform apply",
+			"opentf apply",
 			"failed to apply the created plan",
 			diags,
 		)
@@ -449,7 +449,7 @@ func (c *TestCommand) runTestSuite(ctx context.Context, suiteDirs testCommandSui
 	if diags.HasErrors() {
 		synthError(
 			"destroy",
-			"terraform destroy",
+			"opentf destroy",
 			"failed to destroy objects created during test (NOTE: leftover remote objects may still exist)",
 			diags,
 		)
@@ -550,14 +550,14 @@ func (c *TestCommand) testSuiteContext(suiteDirs testCommandSuiteDirs, providerF
 }
 
 func (c *TestCommand) testSuitePlan(ctx context.Context, suiteDirs testCommandSuiteDirs, providerFactories map[addrs.Provider]providers.Factory) (*plans.Plan, tfdiags.Diagnostics) {
-	log.Printf("[TRACE] terraform test: create plan for suite %q", suiteDirs.SuiteName)
+	log.Printf("[TRACE] opentf test: create plan for suite %q", suiteDirs.SuiteName)
 	runCtx, diags := c.testSuiteContext(suiteDirs, providerFactories, nil, nil, false)
 	if diags.HasErrors() {
 		return nil, diags
 	}
 
 	// We'll also validate as part of planning, to ensure that the test
-	// configuration would pass "terraform validate". This is actually
+	// configuration would pass "opentf validate". This is actually
 	// largely redundant with the runCtx.Core.Plan call below, but was
 	// included here originally because Plan did _originally_ assume that
 	// an earlier Validate had already passed, but now does its own
@@ -576,7 +576,7 @@ func (c *TestCommand) testSuitePlan(ctx context.Context, suiteDirs testCommandSu
 }
 
 func (c *TestCommand) testSuiteApply(ctx context.Context, plan *plans.Plan, suiteDirs testCommandSuiteDirs, providerFactories map[addrs.Provider]providers.Factory) (*states.State, tfdiags.Diagnostics) {
-	log.Printf("[TRACE] terraform test: apply plan for suite %q", suiteDirs.SuiteName)
+	log.Printf("[TRACE] opentf test: apply plan for suite %q", suiteDirs.SuiteName)
 	runCtx, diags := c.testSuiteContext(suiteDirs, providerFactories, nil, plan, false)
 	if diags.HasErrors() {
 		// To make things easier on the caller, we'll return a valid empty
@@ -590,7 +590,7 @@ func (c *TestCommand) testSuiteApply(ctx context.Context, plan *plans.Plan, suit
 }
 
 func (c *TestCommand) testSuiteDestroy(ctx context.Context, state *states.State, suiteDirs testCommandSuiteDirs, providerFactories map[addrs.Provider]providers.Factory) (*states.State, tfdiags.Diagnostics) {
-	log.Printf("[TRACE] terraform test: plan to destroy any existing objects for suite %q", suiteDirs.SuiteName)
+	log.Printf("[TRACE] opentf test: plan to destroy any existing objects for suite %q", suiteDirs.SuiteName)
 	runCtx, diags := c.testSuiteContext(suiteDirs, providerFactories, state, nil, true)
 	if diags.HasErrors() {
 		return state, diags
@@ -604,7 +604,7 @@ func (c *TestCommand) testSuiteDestroy(ctx context.Context, state *states.State,
 		return state, diags
 	}
 
-	log.Printf("[TRACE] terraform test: apply the plan to destroy any existing objects for suite %q", suiteDirs.SuiteName)
+	log.Printf("[TRACE] opentf test: apply the plan to destroy any existing objects for suite %q", suiteDirs.SuiteName)
 	runCtx, moreDiags = c.testSuiteContext(suiteDirs, providerFactories, state, plan, true)
 	diags = diags.Append(moreDiags)
 	if diags.HasErrors() {
@@ -654,7 +654,7 @@ func (c *TestCommand) collectSuiteNames() ([]string, error) {
 
 func (c *TestCommand) Help() string {
 	helpText := `
-Usage: terraform test [options]
+Usage: opentf test [options]
 
   This is an experimental command to help with automated integration
   testing of shared modules. The usage and behavior of this command is
@@ -665,11 +665,11 @@ Usage: terraform test [options]
   working directory for a subdirectory called "tests", and then within
   that directory search for one or more subdirectories that contain
   ".tf" or ".tf.json" files. For any that it finds, it will perform
-  Terraform operations similar to the following sequence of commands
+  OpenTF operations similar to the following sequence of commands
   in each of those directories:
-      terraform validate
-      terraform apply
-      terraform destroy
+      opentf validate
+      opentf apply
+      opentf destroy
 
   The test configurations should not declare any input variables and
   should at least contain a call to the module being tested, which
