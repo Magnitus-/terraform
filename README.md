@@ -8,6 +8,8 @@ The original **Terraform** project maintained by **Hashicorp** can be found here
 
 We are grateful to **Hashicorp** for having created and stewarded the open-source version of **Terraform** (which this project is based) on as well as its community for so long.
 
+<img alt="OpenTF" src="https://github.com/opentffoundation/brand-artifacts/blob/main/full/with-bg/SVG/on-light.svg" width="400px">
+
 # OpenTF
 
 - Website: https://opentf.org/
